@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<title>去乐园</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script type="text/javascript" src='js/require.js' data-main='js/main'></script>
+	<link rel="stylesheet" type="text/css" href="fonts/iconfont.css">
+	<link rel="stylesheet" type="text/css" href="css/swiper-3.3.1.min.css">
+	<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+	<div id="wrap">
+		<div id="main">
+		</div>
+		<div id="footer" class="container-fluid">
+			<div class="row">
+				<div class="home col-xs-3 col-md-3">
+					<a href="#home">
+						<span class="ico iconfont icon-home"></span>
+						<p>首页</p>
+					</a>
+				</div>
+				<div class="paradise col-xs-3 col-md-3">
+					<a href="#paradise">
+						<span class="ico iconfont icon-shangcheng"></span>
+						<p>乐园</p>
+					</a>
+				</div>
+				<div class="card col-xs-3 col-md-3">
+					<a href="#card">
+						<span class="ico iconfont icon-yiletongqia"></span>
+						<p>乐享卡</p>
+					</a>
+				</div>
+				<div class="me col-xs-3 col-md-3">
+					<a href="#me">
+						<span class="ico iconfont icon-iconfontwo"></span>
+						<p>我</p>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript">
+	$('.row').eq(i).find('a').on('click',function(){
+		for(var i = 0 ; i < 4 ; i++){
+			$('.row').eq(i).find('a').css('color','#333');
+		}
+	});
+</script>
+</html>
