@@ -1,4 +1,4 @@
-define([],function(){
+define(['lazy'],function(lazy){
 	function homepage(){
 		$.get('http://duif.applinzi.com/leyuan/home_data.php',function(res){
 			var res = JSON.parse(res);
@@ -8,13 +8,18 @@ define([],function(){
 			var arr = res.reclist;
 			for(var i = 0 ; i < arr.length ;i++){
 				var liObj = $('<li><img /></li>');
-				liObj.find('img').attr('src',arr[i].img);
+				liObj.find('img').attr('data-original',arr[i].img);
+				liObj.find('img').addClass('lazy img-responsive');
 				$('.list').append(liObj);
 			}
+			$(".lazy").lazyload({
+	        	effect : "fadeIn",
+	        	effectspeed:1000
+			});
 			var mySwiper = new Swiper('.swiper-container', {
 			    loop: true,
 			    autoplay:1000
-		  	}); 
+		  	});
 		});
 	}
 	return{

@@ -25,19 +25,19 @@
 				</div>
 				<div class="paradise col-xs-3 col-md-3">
 					<a href="#paradise">
-						<span class="ico iconfont icon-shangcheng"></span>
+						<span class="ico iconfont icon-louyu"></span>
 						<p>乐园</p>
 					</a>
 				</div>
 				<div class="card col-xs-3 col-md-3">
 					<a href="#card">
-						<span class="ico iconfont icon-yiletongqia"></span>
+						<span class="ico iconfont">&#xe610;</span>
 						<p>乐享卡</p>
 					</a>
 				</div>
 				<div class="me col-xs-3 col-md-3">
 					<a href="#me">
-						<span class="ico iconfont icon-iconfontwo"></span>
+						<span class="ico iconfont">&#xe688;</span>
 						<p>我</p>
 					</a>
 				</div>
@@ -45,10 +45,12 @@
 		</div>
 	</div>
 </body>
+<script type="text/javascript" src='js/jquery-2.1.1.js'></script>
 <script type="text/javascript">
-	$('.row').eq(i).find('a').on('click',function(){
+	$('.row').find('a').on('click',function(){
 		for(var i = 0 ; i < 4 ; i++){
-			$('.row').eq(i).find('a').css('color','#333');
+			$('.row').find('a').css('color','#333')
+			$(this).css('color','red');
 		}
 	});
 </script>

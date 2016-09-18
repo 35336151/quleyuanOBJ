@@ -17,9 +17,9 @@ define([],function(){
 					width:'30px',
 					height:'30px',
 				});
-				$('.list').append(liObj);
+				$('.list2').append(liObj);
 			}
-		}	
+		}
 	}
 	return {
 		'paradisepage':paradisepage

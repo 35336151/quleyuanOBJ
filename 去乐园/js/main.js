@@ -8,12 +8,17 @@ require.config({
 		swiper:'swiper-3.3.1.min',
 		css:'css',
 		text:'text',
+		lazy:'jquery.lazyload.min',
 		home:'../html/home',
 		paradisefunc:'../html/paradisefunc'
+		
 	},
 	shim:{
 		'swiper':{
-			export:'_'
+			export:'swiper'
+		},
+		'lazy':{
+			export:'lazy'
 		}
 	}
 });

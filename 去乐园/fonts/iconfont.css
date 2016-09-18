@@ -15,10 +15,10 @@
   -webkit-text-stroke-width: 0.2px;
   -moz-osx-font-smoothing: grayscale;
 }
-
-.icon-home:before { content: "\e600"; }
-.icon-shangcheng:before { content: "\e601"; }
-.icon-yiletongqia:before { content: "\e63f"; }
+.icon-home:before { content: "\e630"; }
+.icon-louyu:before { content: "\e615"; }
+.icon-18:before { content: "\e610"; }
 .icon-iconfontwo:before { content: "\e688"; }
-.icon-dizhi:before { content: "\e67c"; }
-
+.icon-chengshi:before { content: "\e72b"; }
+.icon-dayuhao:before { content: "\e612"; }
+.icon-erweima:before { content: "\e61b"; }
